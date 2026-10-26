@@ -2,10 +2,20 @@ manifest:
   remotes:
     - name: moergo-sc
       url-base: https://github.com/moergo-sc
+    - name: zzeneg # <-- required for Raw HID module
+      url-base: https://github.com/zzeneg
+    - name: srwi # <-- required for KeyPeek module
+      url-base: https://github.com/srwi
   projects:
     - name: zmk
       remote: moergo-sc
       revision: main
       import: app/west.yml
+    - name: zmk-raw-hid # <-- Raw HID module
+      remote: zzeneg
+      revision: main
+    - name: zmk-keypeek-layer-notifier # <-- KeyPeek module
+      remote: srwi
+      revision: master
   self:
     path: config
