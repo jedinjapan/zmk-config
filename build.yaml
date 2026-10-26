@@ -1,6 +1,7 @@
 ---
 include:
   - board: glove80_lh
+    shield: raw_hid_adapter # <-- required for Raw HID support
     snippet: studio-rpc-usb-uart
     cmake-args: "-DCONFIG_ZMK_STUDIO=y"
   - board: glove80_rh
