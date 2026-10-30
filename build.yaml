@@ -1,5 +1,4 @@
 ---
 include:
   - board: glove80_lh
-    snippet: studio-rpc-usb-uart
   - board: glove80_rh
